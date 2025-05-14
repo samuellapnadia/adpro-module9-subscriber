@@ -7,6 +7,6 @@ So, guest:guest@localhost:5672 means we are connecting to a RabbitMQ server runn
 
 
 ## Simulation slow subscriber
-![](ss_three/image.png)
+![](img/ss_three.png)
 Based on the screenshot, the total number of queued messages reached 16 before dropping back down. This reflects the total number of events I published using repeated cargo run commands on the publisher. Since the subscriber was simulating slower message handling, the messages accumulated temporarily in the queue. The number 16 occurred because I ran the publisher multiple times, and the subscriber was still processing previous messages one by one. This buildup shows how a fast producer can cause a message backlog when the consumer is slower, and the exact queue size depends on how many events are sent before the subscriber catches up.
 
