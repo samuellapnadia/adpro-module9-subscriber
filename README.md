@@ -1,0 +1,6 @@
+# REFLECTION - MODULE 9 - SUBSCRIBER - 2306170446 - Samuella Putri Nadia Pauntu 
+## What is amqp?
+AMQP (Advanced Message Queuing Protocol) is an open standard protocol for message-oriented middleware. It enables systems to communicate by sending messages through a message broker like RabbitMQ. AMQP ensures message delivery, ordering, and reliability in distributed systems.
+## What does it mean? guest:guest@localhost:5672 , what is the first guest, and what is the second guest, and what is localhost:5672 is for? 
+The first guest is the username (default user in RabbitMQ). The second guest is the password. localhost:5672 refers to the host (local machine) and the port number (5672 is the default port for AMQP).
+So, guest:guest@localhost:5672 means we are connecting to a RabbitMQ server running locally using the guest user and password via the AMQP protocol on port 5672.
